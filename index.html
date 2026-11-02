@@ -5,665 +5,1551 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yash Chaudhari | Portfolio</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/YC.png" type="image/x-icon">
+  <!-- Primary SEO Metadata -->
+  <title>Yash Chaudhari — Full-Stack Developer &amp; User Research Participant</title>
+  <meta name="description"
+    content="Personal portfolio of Yash Chaudhari, IT undergraduate at NMIMS MPSTME and full-stack software engineer interested in thoughtful product experiences, system design, and real-world user research.">
+  <meta name="author" content="Yash Chaudhari">
+  <meta name="keywords"
+    content="Yash Chaudhari, Full-Stack Developer, NMIMS, MPSTME, PlacementX, User Research, dscout, React, TypeScript, Node.js, Java, Python, Portfolio">
+  <link rel="canonical" href="https://yashchaudhari.me/">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yashchaudhari.me/">
+  <meta property="og:title" content="Yash Chaudhari — Full-Stack Developer &amp; User Research Participant">
+  <meta property="og:description"
+    content="Building useful software. Understanding the people who use it. Explore full-stack projects, distributed systems, and real-world user research evidence.">
+  <meta property="og:image" content="https://yashchaudhari.me/assets/images/YC.jpeg">
 
-  <!--
-    - google font link
-  -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://yashchaudhari.me/">
+  <meta name="twitter:title" content="Yash Chaudhari — Full-Stack Developer &amp; User Research Participant">
+  <meta name="twitter:description"
+    content="Building useful software. Understanding the people who use it. Explore full-stack projects, distributed systems, and real-world user research evidence.">
+  <meta name="twitter:image" content="https://yashchaudhari.me/assets/images/YC.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/YC.png">
+  <link rel="apple-touch-icon" href="./assets/images/YC.png">
+
+  <!-- Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css?v=2.4">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yash Chaudhari",
+    "url": "https://yashchaudhari.me",
+    "image": "https://yashchaudhari.me/assets/images/YC.jpeg",
+    "sameAs": [
+      "https://github.com/YashChaudhari999",
+      "https://www.linkedin.com/in/yashchaudhari500",
+      "https://x.com/_YashChaudhari",
+      "https://research.yashchaudhari.me"
+    ],
+    "jobTitle": "Full-Stack Developer & User Research Participant",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "SVKM's NMIMS MPSTME"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "SVKM's NMIMS Mukesh Patel School of Technology Management & Engineering"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "R. C. Patel Polytechnic, Shirpur"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="/assets/images/YC.jpeg" alt="Yash Chaudhari" width="80" style="border-radius: 20px;">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Yash Chaudhari">Yash Chaudhari</h1>
-
-          <p class="title">Developer</p>
+  <!-- ========================================================================
+       Header & Sticky Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Yash Chaudhari Home">
+        <img src="./assets/images/YC.png" alt="YC logo mark" class="brand-mark" width="36" height="36">
+        <div class="brand-text">
+          <span class="brand-name">Yash Chaudhari</span>
+          <span class="brand-subtitle">Developer &amp; Researcher</span>
         </div>
+      </a>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:yashchaudhari500@gmail.com" class="contact-link">yashchaudhari500@gmail.com</a>
-            </div>
-
+      <!-- Desktop Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li>
+            <a href="#research" class="nav-link">
+              Research
+              <span class="nav-badge-pill">UX Lens</span>
+            </a>
           </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+917558290999" class="contact-link">+91 7558290999</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2005-08-16">August 16, 2005</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Shirpur, Maharashtra, India</address>
-            </div>
-
-          </li>
-
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/yashchaudhari500/" target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/YashChaudhari999" target="_blank" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://x.com/_YashChaudhari" target="_blank" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/yyyash_999" target="_blank" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-        </ul>
-
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm an IT undergraduate with a strong interest in software development and problem-solving. I've worked on
-            full-stack projects involving web technologies, backend development, and database systems. My experience
-            includes building secure applications, designing APIs, integrating front-end and backend systems, and
-            contributing to testing and quality assurance.
-          </p>
-
-          <p>
-
-            I've completed a web development training program where I worked on real project components, and I've built
-            multiple academic projects using Java, PHP, MySQL, Node.js, Express.js, and MongoDB. I enjoy learning new
-            technologies, improving system design, and creating applications that are simple, reliable, and
-            user-focused.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  Creating clean and user-friendly interfaces with a focus on clarity and responsive layouts.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  Building full-stack web applications, integrating front-end and backend systems, and developing
-                  secure, scalable features.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-api.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend development</h4>
-
-                <p class="service-item-text">
-                  Developing APIs, handling databases, implementing authentication, and managing server-side logic using
-                  Node.js, Express.js, Java, and PHP.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-db.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Database management</h4>
-
-                <p class="service-item-text">
-                  Designing and working with MySQL and MongoDB databases, performing CRUD operations, and optimizing
-                  data handling for applications.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-
-        <!--
-          - testimonials modal
-        -->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-          </section>
-        </div>
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">SVKM's NMIMS Mukesh Patel School of Technology Management & Engineering
-              </h4>
-
-              <span>2024 — 2027</span>
-
-              <p class="timeline-text">
-                Pursuing B.Tech in Information Technology.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">R. C. Patel Polytechnic, Shirpur</h4>
-
-              <span>2021 — 2024</span>
-
-              <p class="timeline-text">
-                Completed Diploma in Computer Science and Engineering with 86.80 percent (MSBTE).
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">R. C. Patel Secondary School, Shirpur</h4>
-
-              <span>2014 — 2021</span>
-
-              <p class="timeline-text">
-                Completed SSC under Maharashtra State Board with 91.40 percent.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web Developer Trainee — NPIT Solutions, Nashik</h4>
-
-              <span>Jul 2023 — Aug 2023</span>
-
-              <p class="timeline-text">
-                Worked on full-stack development tasks including UI implementation, backend integration, and
-                project-level testing activities.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java & Advanced Java</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">JavaScript (Frontend & Backend)</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web Development (HTML, CSS, JavaScript, PHP)</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Database Management (MySQL, MongoDB)</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Version Control (GitHub)</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-          <a href="assets/Yash_Resume.pdf" download="Yash_Resume.pdf">
-            <div class="title-wrapper" style="margin-top: 2rem; gap:15px;">
-              <div class="icon-box">
-                <ion-icon name="download-outline"></ion-icon>
-              </div>
-              <h3 class="h3">Download Resume</h3>
-            </div>
-          </a>
-        </section>
-
-      </article>
-      <!--
-        - #PORTFOLIO
-      -->
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/YashChaudhari999/FileShare.git" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.webp" alt="File Sharing" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">File Sharing</h3>
-
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/YashChaudhari999/EspeakUp.git" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.webp" alt="EspeakUp" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">EspeakUp</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/YashChaudhari999/Java-Projects.git" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Patient Details Management System</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="All">
-              <a href="https://github.com/YashChaudhari999" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">More Project?</h3>
-
-                <p class="project-category">Click to Access</p>
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
+      <!-- Header Utilities -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg id="themeIconSun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg id="themeIconMoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Action -->
+        <a href="./assets/Yash_Resume.pdf" class="btn-nav-resume" download="Yash_Chaudhari_Resume.pdf" aria-label="Download Yash Chaudhari's Resume in PDF format">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay & Panel -->
+  <div id="drawerOverlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation Menu" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <img src="./assets/images/YC.png" alt="" class="drawer-brand-img" width="30" height="30">
+        <span class="drawer-brand-name">Yash Chaudhari</span>
+      </div>
+      <button id="drawerCloseBtn" class="drawer-close-btn" aria-label="Close navigation menu">✕</button>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="#about" class="drawer-link">
+        <span>About Me</span>
+        <span class="drawer-arrow">→</span>
+      </a>
+      <a href="#projects" class="drawer-link">
+        <span>Featured Projects</span>
+        <span class="drawer-arrow">→</span>
+      </a>
+      <a href="#research" class="drawer-link">
+        <span>User Research Lens</span>
+        <span class="nav-badge-pill">UX Lens</span>
+      </a>
+      <a href="#experience" class="drawer-link">
+        <span>Experience &amp; Education</span>
+        <span class="drawer-arrow">→</span>
+      </a>
+      <a href="#skills" class="drawer-link">
+        <span>Technical Skills</span>
+        <span class="drawer-arrow">→</span>
+      </a>
+      <a href="#contact" class="drawer-link">
+        <span>Get In Touch</span>
+        <span class="drawer-arrow">→</span>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="https://research.yashchaudhari.me" target="_blank" rel="noopener noreferrer" class="btn btn-lime btn-block">
+        Explore Research Portfolio ↗
+      </a>
+      <a href="./assets/Yash_Resume.pdf" download="Yash_Chaudhari_Resume.pdf" class="btn btn-primary btn-block">
+        Download Resume (PDF)
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Main Content
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         1. Hero Section
+         ====================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-identity">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Software Developer · Java • Spring Boot • React.js</span>
+          </div>
+
+          <h1 class="hero-title">
+            Building useful software.<br>
+            <em>Understanding the people who use it.</em>
+          </h1>
+
+          <p class="hero-role">
+            Yash Chaudhari
+            <span aria-hidden="true">·</span>
+            IT Undergrad @ NMIMS MPSTME
+            <span aria-hidden="true">·</span>
+            Java &bull; Spring Boot &bull; React.js
+          </p>
+
+          <p class="hero-lede">
+            I’m an IT undergraduate and developer interested in full-stack engineering, distributed systems, and real-world user research. I build applications with technical rigor, explore how people interact with technology, and design digital experiences that feel intuitive, clear, and reliable.
+          </p>
+
+          <p class="hero-thesis">
+            <strong>My approach:</strong> Code must be technically robust, but great software only happens when we observe where real users hesitate, question, and get value.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Featured Work ↓
+            </a>
+            <a href="#research" class="btn btn-lime">
+              User Research Lens ↗
+            </a>
+            <a href="./assets/Yash_Resume.pdf" download="Yash_Chaudhari_Resume.pdf" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Resume PDF
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span>Verified Links:</span>
+            <a href="https://github.com/YashChaudhari999" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/yashchaudhari500" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://x.com/_YashChaudhari" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a>
+            <a href="https://research.yashchaudhari.me" target="_blank" rel="noopener noreferrer">Research Site ↗</a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-ring-bg" aria-hidden="true"></div>
+
+            <!-- Main Profile Card -->
+            <div class="profile-card">
+              <div class="profile-header">
+                <span>IDENTITY / PROFILE</span>
+                <span class="badge-verified">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  VERIFIED PROFILE
+                </span>
+              </div>
+
+              <div class="profile-image-box">
+                <img src="./assets/images/YC.jpeg" alt="Yash Chaudhari portrait" width="340" height="290">
+                <div class="profile-tag-overlay">
+                  Shirpur, Maharashtra, India
+                </div>
+              </div>
+
+              <div class="profile-meta">
+                <h3>Yash Chaudhari</h3>
+                <p>B.Tech IT Student at NMIMS MPSTME · Developer &amp; Active User Research Participant</p>
+              </div>
+
+              <!-- Dedicated Dual Capability Cards (Zero Occlusion, Perfectly Aligned) -->
+              <div class="profile-capabilities" aria-label="Core Specializations">
+                <div class="capability-pill cap-code">
+                  <div class="cap-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>FULL-STACK ARCHITECTURE</span>
+                  </div>
+                  <strong class="cap-text">REACT · NODE · JAVA</strong>
+                </div>
+
+                <div class="capability-pill cap-ux">
+                  <div class="cap-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span>RESEARCH PARTICIPANT</span>
+                  </div>
+                  <strong class="cap-text">SINCE 2024 · 28+ ENTRIES</strong>
+                </div>
+              </div>
+
+              <div class="profile-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-num">7.95</span>
+                  <span class="stat-label">CGPA · B.Tech '27</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">4+</span>
+                  <span class="stat-label">dscout Missions</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">86.8%</span>
+                  <span class="stat-label">Diploma Distinction</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. About Section
+         ====================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-kicker">01 · BACKGROUND &amp; PHILOSOPHY</div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <h2 class="section-title">
+              Crafting systems that work.<br>
+              <em>Thinking through how people use them.</em>
+            </h2>
+
+            <p>
+              I am an Information Technology undergraduate at SVKM's NMIMS Mukesh Patel School of Technology Management &amp; Engineering (2024–2027), previously completing my Diploma in Computer Science &amp; Engineering from R. C. Patel Polytechnic with 86.80% distinction.
+            </p>
+
+            <p>
+              My development foundation spans building full-stack platforms, engineering backend APIs, designing relational and document database schemas, and working with distributed systems. During my Web Developer Trainee tenure at NPIT Solutions in Nashik, I implemented real-world frontend components, integrated backend REST endpoints, and verified software quality.
+            </p>
+
+            <div class="about-quote-box">
+              "A system can have 100% test coverage and pristine backend logic, yet still fail if the user stumbles at the third step. Engineering excellence requires empathy for real human behavior."
+            </div>
+
+            <p>
+              What sets my perspective apart is an ongoing habit since 2024 of participating in real-world user research studies. Testing early prototypes, reporting confusing friction points, and completing multi-day diary studies has taught me to write software that anticipates misunderstandings before code ever reaches production.
+            </p>
+          </div>
+
+          <!-- Academic Credentials Cards -->
+          <div class="education-cards">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;">Education &amp; Academic Honors</h3>
+            <p style="font-size: 0.875rem; color: var(--muted); margin-bottom: 20px;">Verified educational milestones and current degree pursuit.</p>
+
+            <!-- NMIMS -->
+            <div class="edu-card">
+              <div class="edu-top">
+                <span class="edu-degree">B.Tech in Information Technology</span>
+                <span class="edu-dates">2024 — 2027</span>
+              </div>
+              <div class="edu-school">SVKM's NMIMS Mukesh Patel School of Technology Management &amp; Engineering</div>
+              <p style="font-size: 0.875rem; color: var(--muted); line-height: 1.55; margin-bottom: 12px;">
+                Focusing on full-stack web architectures, distributed systems, software engineering, and database design. Leading Capstone project <em>PlacementX</em> for campus recruitment automation.
+              </p>
+              <span class="edu-badge-grade">Current CGPA: 7.95 / 10 · Shirpur Campus</span>
+            </div>
+
+            <!-- Polytechnic -->
+            <div class="edu-card">
+              <div class="edu-top">
+                <span class="edu-degree">Diploma in Computer Science &amp; Engineering</span>
+                <span class="edu-dates">2021 — 2024</span>
+              </div>
+              <div class="edu-school">R. C. Patel Polytechnic, Shirpur (MSBTE)</div>
+              <p style="font-size: 0.875rem; color: var(--muted); line-height: 1.55; margin-bottom: 12px;">
+                Comprehensive technical coursework in Data Structures, Object-Oriented Programming (Java/C++), Relational Databases (MySQL), and Web Technologies. Completed eSpeakUp major capstone project.
+              </p>
+              <span class="edu-badge-grade">Graduated with 86.80% First Class Distinction</span>
+            </div>
+
+            <!-- SSC -->
+            <div class="edu-card">
+              <div class="edu-top">
+                <span class="edu-degree">Secondary School Certificate (SSC)</span>
+                <span class="edu-dates">2014 — 2021</span>
+              </div>
+              <div class="edu-school">R. C. Patel Secondary School, Shirpur (Maharashtra State Board)</div>
+              <p style="font-size: 0.875rem; color: var(--muted); line-height: 1.55; margin-bottom: 12px;">
+                Strong academic foundation in Mathematics and Sciences.
+              </p>
+              <span class="edu-badge-grade">Scored 91.40% Distinction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. Featured Projects Section
+         ====================================================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="projects-header-row">
+          <div>
+            <div class="section-kicker">02 · SELECTED WORK</div>
+            <h2 class="section-title">
+              Engineered for performance.<br>
+              <em>Built for real people.</em>
+            </h2>
+            <p class="section-subtitle">
+              A curated collection of full-stack platforms, distributed systems, native mobile utilities, and offline-first software built with production considerations.
+            </p>
+          </div>
+
+          <!-- Category Filter Toolbar -->
+          <div class="filter-toolbar" role="toolbar" aria-label="Filter projects by category">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Full-Stack &amp; Web</button>
+            <button class="filter-btn" data-filter="systems">Mobile &amp; Systems</button>
+            <button class="filter-btn" data-filter="ai">AI &amp; Developer Tools</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- 1. PlacementX (Featured Hero Project) -->
+          <article class="project-card featured-hero" data-category="web ai">
+            <div class="project-preview">
+              <span class="project-tag-pill">NMIMS CAPSTONE PLATFORM</span>
+              <img src="./assets/images/project-placementx.png" alt="PlacementX Campus Placement Platform Interface" loading="lazy" width="700" height="400">
+            </div>
+            <div class="project-body">
+              <div>
+                <div class="project-kicker">FULL-STACK MONOREPO · DECISION AUTOMATION</div>
+                <h3 class="project-title">PlacementX: Smart Campus Placement Automation</h3>
+                <p class="project-desc">
+                  An end-to-end recruitment management and decision automation platform engineered for NMIMS University. Solves spreadsheet chaos by centralizing student profiles, automated resume ATS analysis, skill gap tracking, and placement drive shortlisting for students, recruiters, and placement officers. Built as a TypeScript monorepo with background Redis/BullMQ queues and companion Android client (CapstoneX).
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-pill">React 18</span>
+                  <span class="tech-pill">TypeScript</span>
+                  <span class="tech-pill">Vite</span>
+                  <span class="tech-pill">Tailwind CSS v4</span>
+                  <span class="tech-pill">Express</span>
+                  <span class="tech-pill">Prisma ORM</span>
+                  <span class="tech-pill">PostgreSQL 16</span>
+                  <span class="tech-pill">Redis</span>
+                  <span class="tech-pill">BullMQ</span>
+                  <span class="tech-pill">Firebase</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/YashChaudhari999/PlacementX" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repository ↗
+                </a>
+                <button class="btn-project-detail" data-project-key="placementx">
+                  View Architecture Details →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Samsung Screen Recorder -->
+          <article class="project-card" data-category="systems">
+            <div class="project-preview">
+              <span class="project-tag-pill">NATIVE ANDROID</span>
+              <img src="./assets/images/project-samsung.jpg" alt="Samsung Screen Recorder App UI" loading="lazy" width="600" height="300">
+            </div>
+            <div class="project-body">
+              <div>
+                <div class="project-kicker">MOBILE ENGINEERING · ONE UI UTILITY</div>
+                <h3 class="project-title">Samsung Screen Recorder</h3>
+                <p class="project-desc">
+                  A free, lightweight, open-source Android screen recorder inspired by Samsung One UI aesthetics. Built with zero ads, no trackers, internal audio capture, pause/resume, and floating overlay controls using Android's native MediaProjection, MediaCodec, and MediaMuxer APIs.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-pill">Java</span>
+                  <span class="tech-pill">Android SDK</span>
+                  <span class="tech-pill">MediaProjection</span>
+                  <span class="tech-pill">MediaCodec</span>
+                  <span class="tech-pill">Foreground Services</span>
+                  <span class="tech-pill">One UI</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/YashChaudhari999/samsung-screen-recorder" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repository ↗
+                </a>
+                <a href="https://github.com/YashChaudhari999/samsung-screen-recorder/releases/latest" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  Download APK ↗
+                </a>
+                <button class="btn-project-detail" data-project-key="samsung">
+                  Details →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Forgefield — AI Creative Studio -->
+          <article class="project-card" data-category="web ai">
+            <div class="project-preview">
+              <span class="project-tag-pill">LIVE VERCEL APP</span>
+              <img src="./assets/images/project-forgefield.png" alt="Forgefield AI Creative Studio App Interface" loading="lazy" width="600" height="300">
+            </div>
+            <div class="project-body">
+              <div>
+                <div class="project-kicker">NEXT.JS 14 APP ROUTER · SUPABASE</div>
+                <h3 class="project-title">Forgefield: AI Creative Project Studio</h3>
+                <p class="project-desc">
+                  A high-performance AI creative workspace designed for prompt engineers and digital creators to structure cinematic video briefs, organize reference media, and orchestrate generation pipelines. Built for the 8x Engineering benchmark with live production deployment on Vercel.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-pill">Next.js 14</span>
+                  <span class="tech-pill">React 18</span>
+                  <span class="tech-pill">TypeScript</span>
+                  <span class="tech-pill">Tailwind CSS</span>
+                  <span class="tech-pill">Supabase</span>
+                  <span class="tech-pill">Framer Motion</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/YashChaudhari999/Clone-Higgsfield-AI" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repository ↗
+                </a>
+                <a href="https://clone-higgsfield-ai.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  Live App ↗
+                </a>
+                <button class="btn-project-detail" data-project-key="forgefield">
+                  Details →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Distributed Hospital Management System -->
+          <article class="project-card" data-category="systems">
+            <div class="project-preview">
+              <span class="project-tag-pill">DISTRIBUTED ARCHITECTURE</span>
+              <img src="./assets/images/project-hospital.png" alt="Hospital Management System Architecture Sequence Diagram" loading="lazy" width="600" height="300">
+            </div>
+            <div class="project-body">
+              <div>
+                <div class="project-kicker">JAVA 21 SOCKET SERVER · MONGODB</div>
+                <h3 class="project-title">Distributed Hospital Management System</h3>
+                <p class="project-desc">
+                  A multi-client distributed healthcare management system built with Java 21, Swing UI, custom multithreaded TCP socket server architecture, and MongoDB. Eliminates HTTP REST overhead by ~50% across local clinic workstations for real-time patient admission, diagnosis updating, and record synchronization.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-pill">Java 21</span>
+                  <span class="tech-pill">Sockets</span>
+                  <span class="tech-pill">Multithreading</span>
+                  <span class="tech-pill">MongoDB 5.1</span>
+                  <span class="tech-pill">Maven</span>
+                  <span class="tech-pill">Swing</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/YashChaudhari999/Hospital-Management-System-Java-MongoDB" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repository ↗
+                </a>
+                <button class="btn-project-detail" data-project-key="hospital">
+                  Details →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Library-Integration-Assistant -->
+          <article class="project-card" data-category="ai web">
+            <div class="project-preview">
+              <span class="project-tag-pill">AI DEVELOPER TOOL</span>
+              <img src="./assets/images/project-autointegrate.svg" alt="Library Integration Assistant Architecture Preview" loading="lazy" width="600" height="300">
+            </div>
+            <div class="project-body">
+              <div>
+                <div class="project-kicker">REACT &amp; VITE · OPENROUTER GEMMA LLM</div>
+                <h3 class="project-title">Library-Integration-Assistant</h3>
+                <p class="project-desc">
+                  An AI-powered developer tool that analyzes NPM packages via LLM prompt engineering, generates context-aware integration code, and produces copy-pasteable snippets that fit seamlessly into existing codebases without breaking architectural structure.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-pill">React</span>
+                  <span class="tech-pill">Vite</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">Tailwind CSS</span>
+                  <span class="tech-pill">OpenRouter API</span>
+                  <span class="tech-pill">Prompt Engineering</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/YashChaudhari999/auto-integrate" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repository ↗
+                </a>
+                <button class="btn-project-detail" data-project-key="autointegrate">
+                  Details →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. eSpeakUp -->
+          <article class="project-card" data-category="web">
+            <div class="project-preview">
+              <span class="project-tag-pill">DIPLOMA MAJOR PROJECT · 5-MEMBER TEAM</span>
+              <img src="./assets/images/project-2.webp" alt="eSpeakUp Language Learning Platform" loading="lazy" width="600" height="300">
+            </div>
+            <div class="project-body">
+              <div>
+                <div class="project-kicker">EDUCATIONAL TECH · CONVERSATIONAL BOT</div>
+                <h3 class="project-title">eSpeakUp: Language Learning &amp; Chatbot</h3>
+                <p class="project-desc">
+                  An interactive web-based language learning platform developed as a Diploma Final Year Major Project by a 5-member student engineering team (with Yash as lead full-stack contributor). Features vocabulary exercises, quizzes, student progress tracking, and an interactive conversational chatbot.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-pill">PHP</span>
+                  <span class="tech-pill">MySQL</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">HTML5/CSS3</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/YashChaudhari999/EspeakUp" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  Repository ↗
+                </a>
+                <button class="btn-project-detail" data-project-key="espeakup">
+                  Details →
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. User Research Integration (Core Requirement)
+         ====================================================================== -->
+    <section id="research" class="section research-section">
+      <div class="container">
+        <!-- Section Intro Grid -->
+        <div class="research-intro-grid">
+          <div class="research-intro-text">
+            <div class="section-kicker">03 · HUMAN-CENTERED PERSPECTIVE</div>
+            <h2 class="section-title">
+              Beyond building products,<br>
+              <em>I study how people experience them.</em>
+            </h2>
+            <p>
+              Since 2024, I’ve actively participated in real-world user research across <strong>usability tests, 1:1 moderated interviews, longitudinal diary studies, and AI product evaluations</strong>.
+            </p>
+            <p>
+              Experiencing products as an observant participant transformed how I engineer software. I don't just ask <em>"does this function compile?"</em>—I ask <em>"where will a user hesitate, what assumptions are we making, and does this screen earn trust?"</em>
+            </p>
+          </div>
+
+          <!-- Research Callout Banner -->
+          <div class="research-callout-card">
+            <div class="callout-top">
+              <span class="callout-badge">ACTIVE RESEARCH HABIT</span>
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted);">SINCE 2024</span>
+            </div>
+
+            <blockquote class="callout-quote">
+              “Every study is a chance to make a product a little easier to understand.”
+            </blockquote>
+
+            <div class="research-stats-bar">
+              <div class="r-stat">
+                <strong>2024</strong>
+                <span>Active Since</span>
+              </div>
+              <div class="r-stat">
+                <strong>4+</strong>
+                <span>Missions</span>
+              </div>
+              <div class="r-stat">
+                <strong>28+</strong>
+                <span>Diary Entries</span>
+              </div>
+            </div>
+
+            <div class="callout-action-wrap">
+              <a href="https://research.yashchaudhari.me" target="_blank" rel="noopener noreferrer" class="btn-visit-research">
+                Explore Dedicated Research Portfolio ↗
+              </a>
+              <span class="callout-hint">
+                View verified dashboards, 12+ case studies &amp; platform screenshots at research.yashchaudhari.me
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Ecosystem Grid -->
+        <div class="ecosystem-wrap">
+          <div class="subhead-row">
+            <div>
+              <h3 class="subhead-title">Seven Research Platforms. One Consistent Habit.</h3>
+              <p style="font-size: 0.9375rem; color: var(--muted); margin-top: 4px;">
+                Different platforms require different observation modes: rapid micro-feedback, deep interviews, or multi-week missions.
+              </p>
+            </div>
+            <a href="https://research.yashchaudhari.me/#evidence" target="_blank" rel="noopener noreferrer" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink); text-decoration: underline;">
+              View Full Evidence Live ↗
+            </a>
+          </div>
+
+          <div class="platform-grid">
+            <!-- 1. dscout -->
+            <div class="platform-card">
+              <div>
+                <div class="platform-top">
+                  <span class="platform-num">01</span>
+                  <span class="platform-status status-has-proof">● 7 Proof Items</span>
+                </div>
+                <h4 class="platform-name">dscout</h4>
+                <p class="platform-focus">Multi-day diary missions, search behavior studies, and screen-recorded usability tasks.</p>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--green); font-weight: 600;">Documented Dashboard</span>
+            </div>
+
+            <!-- 2. User Interviews -->
+            <div class="platform-card">
+              <div>
+                <div class="platform-top">
+                  <span class="platform-num">02</span>
+                  <span class="platform-status status-has-proof">● 3 Proof Items</span>
+                </div>
+                <h4 class="platform-name">User Interviews</h4>
+                <p class="platform-focus">60-minute 1:1 moderated sessions, developer tool workflows (Node.js), and game testing.</p>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--green); font-weight: 600;">Verified Sessions</span>
+            </div>
+
+            <!-- 3. UserCrowd -->
+            <div class="platform-card">
+              <div>
+                <div class="platform-top">
+                  <span class="platform-num">03</span>
+                  <span class="platform-status status-has-proof">● 1 Proof Item</span>
+                </div>
+                <h4 class="platform-name">UserCrowd</h4>
+                <p class="platform-focus">Rapid interface design evaluations, A/B navigation choices, and micro-usability feedback.</p>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--green); font-weight: 600;">Completed Tests</span>
+            </div>
+
+            <!-- 4. PlaybookUX -->
+            <div class="platform-card">
+              <div>
+                <div class="platform-top">
+                  <span class="platform-num">04</span>
+                  <span class="platform-status status-has-proof">● 1 Proof Item</span>
+                </div>
+                <h4 class="platform-name">PlaybookUX</h4>
+                <p class="platform-focus">Unmoderated think-aloud usability testing, task flow recordings, and satisfaction surveys.</p>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--green); font-weight: 600;">Verified Recordings</span>
+            </div>
+
+            <!-- 5. UserTesting -->
+            <div class="platform-card">
+              <div>
+                <div class="platform-top">
+                  <span class="platform-num">05</span>
+                  <span class="platform-status status-no-proof">○ Ecosystem</span>
+                </div>
+                <h4 class="platform-name">UserTesting</h4>
+                <p class="platform-focus">Live interface evaluation, web flow benchmarking, and prototype think-aloud tests.</p>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted-light);">Platform Listed</span>
+            </div>
+
+            <!-- 6. BetaTesting -->
+            <div class="platform-card">
+              <div>
+                <div class="platform-top">
+                  <span class="platform-num">06</span>
+                  <span class="platform-status status-no-proof">○ Ecosystem</span>
+                </div>
+                <h4 class="platform-name">BetaTesting</h4>
+                <p class="platform-focus">Early-stage pre-release software testing, feature discovery, and bug reporting.</p>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted-light);">Platform Listed</span>
+            </div>
+
+            <!-- 7. Testerwork -->
+            <div class="platform-card">
+              <div>
+                <div class="platform-top">
+                  <span class="platform-num">07</span>
+                  <span class="platform-status status-no-proof">○ Ecosystem</span>
+                </div>
+                <h4 class="platform-name">Testerwork</h4>
+                <p class="platform-focus">Cross-device execution tests, exploratory QA feedback, and functional validation.</p>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted-light);">Platform Listed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Evidence Showcase (Interactive Grid) -->
+        <div class="evidence-showcase-wrap">
+          <div class="subhead-row">
+            <div>
+              <h3 class="subhead-title">Genuine Participation Proof</h3>
+              <p style="font-size: 0.9375rem; color: var(--muted); margin-top: 4px;">
+                Click any evidence card to inspect verified study screenshots and participant details.
+              </p>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">
+              Confidential info redacted to respect study terms
+            </span>
+          </div>
+
+          <div class="evidence-grid">
+
+            <!-- Evidence 1: dscout Profile -->
+            <div class="evidence-card featured" data-evidence-card
+                 data-evidence-title="Participant Dashboard &amp; Activity Record"
+                 data-evidence-platform="dscout"
+                 data-evidence-year="2025"
+                 data-evidence-type="Profile Verification"
+                 data-evidence-desc="Participant dashboard documenting 4 completed missions, 28 detailed diary entries, and confirmed incentives."
+                 data-evidence-img="./assets/images/research/dscout-profile.png">
+              <div class="evidence-img-box">
+                <img src="./assets/images/research/dscout-profile.png" alt="dscout participant dashboard" loading="lazy">
+                <span class="evidence-zoom-tag">Click to Inspect ↗</span>
+              </div>
+              <div class="evidence-info">
+                <div class="evidence-meta">
+                  <span>dscout</span>
+                  <span>2025</span>
+                </div>
+                <h4 class="evidence-title">Participant Dashboard</h4>
+                <p class="evidence-desc">Logged 4 multi-day missions and 28 diary entries across generative AI and digital workflows.</p>
+              </div>
+            </div>
+
+            <!-- Evidence 2: AI Evaluation -->
+            <div class="evidence-card featured" data-evidence-card
+                 data-evidence-title="AI Evaluation Multi-Day Mission"
+                 data-evidence-platform="dscout"
+                 data-evidence-year="2025"
+                 data-evidence-type="Multi-Day Diary Study"
+                 data-evidence-desc="A multi-day longitudinal mission comparing how participants discover, evaluate, and adopt AI tools in daily tasks."
+                 data-evidence-img="./assets/images/research/dscout-ai-evaluation.png">
+              <div class="evidence-img-box">
+                <img src="./assets/images/research/dscout-ai-evaluation.png" alt="dscout AI evaluation mission screen" loading="lazy">
+                <span class="evidence-zoom-tag">Click to Inspect ↗</span>
+              </div>
+              <div class="evidence-info">
+                <div class="evidence-meta">
+                  <span>dscout</span>
+                  <span>2025</span>
+                </div>
+                <h4 class="evidence-title">AI Tool Evaluation Mission</h4>
+                <p class="evidence-desc">Comparing everyday user adoption, perceived utility, and prompt friction across modern AI tools.</p>
+              </div>
+            </div>
+
+            <!-- Evidence 3: Search Party -->
+            <div class="evidence-card" data-evidence-card
+                 data-evidence-title="Search Party: 14-Day Longitudinal Study"
+                 data-evidence-platform="dscout"
+                 data-evidence-year="2025"
+                 data-evidence-type="Longitudinal Research"
+                 data-evidence-desc="A 14-day longitudinal diary mission tracking user query habits, browsing patterns, and search engine preferences."
+                 data-evidence-img="./assets/images/research/dscout-search-party.png">
+              <div class="evidence-img-box">
+                <img src="./assets/images/research/dscout-search-party.png" alt="dscout Search Party study screen" loading="lazy">
+                <span class="evidence-zoom-tag">Zoom ↗</span>
+              </div>
+              <div class="evidence-info">
+                <div class="evidence-meta">
+                  <span>dscout</span>
+                  <span>2025</span>
+                </div>
+                <h4 class="evidence-title">Search Party (14-Day Study)</h4>
+                <p class="evidence-desc">Deep inquiry into how search habits evolve when switching between classic engines and AI search.</p>
+              </div>
+            </div>
+
+            <!-- Evidence 4: Node.js Developer Research -->
+            <div class="evidence-card" data-evidence-card
+                 data-evidence-title="Node.js Developer Tooling 1:1 Study"
+                 data-evidence-platform="User Interviews"
+                 data-evidence-year="2026"
+                 data-evidence-type="1:1 Moderated Interview"
+                 data-evidence-desc="A moderated research session investigating developer habits, workflow friction, and web application deployment patterns."
+                 data-evidence-img="./assets/images/research/userinterviews-nodejs.png">
+              <div class="evidence-img-box">
+                <img src="./assets/images/research/userinterviews-nodejs.png" alt="User Interviews Node.js study screen" loading="lazy">
+                <span class="evidence-zoom-tag">Zoom ↗</span>
+              </div>
+              <div class="evidence-info">
+                <div class="evidence-meta">
+                  <span>User Interviews</span>
+                  <span>2026</span>
+                </div>
+                <h4 class="evidence-title">Developer Tool Research</h4>
+                <p class="evidence-desc">1:1 moderated deep dive on Node.js workflows, local dev environments, and tool tooling pain points.</p>
+              </div>
+            </div>
+
+            <!-- Evidence 5: User Interviews Dashboard -->
+            <div class="evidence-card" data-evidence-card
+                 data-evidence-title="User Interviews Study Dashboard"
+                 data-evidence-platform="User Interviews"
+                 data-evidence-year="2026"
+                 data-evidence-type="Session History"
+                 data-evidence-desc="Confirmed, approved, and paid research sessions including gaming product tests and developer feedback."
+                 data-evidence-img="./assets/images/research/userinterviews-studies.png">
+              <div class="evidence-img-box">
+                <img src="./assets/images/research/userinterviews-studies.png" alt="User Interviews participant dashboard" loading="lazy">
+                <span class="evidence-zoom-tag">Zoom ↗</span>
+              </div>
+              <div class="evidence-info">
+                <div class="evidence-meta">
+                  <span>User Interviews</span>
+                  <span>2026</span>
+                </div>
+                <h4 class="evidence-title">Confirmed Study History</h4>
+                <p class="evidence-desc">Record of scheduled, approved, and completed moderated 1:1 interview sessions.</p>
+              </div>
+            </div>
+
+            <!-- Evidence 6: PlaybookUX Usability Tests -->
+            <div class="evidence-card" data-evidence-card
+                 data-evidence-title="PlaybookUX Usability Test Records"
+                 data-evidence-platform="PlaybookUX"
+                 data-evidence-year="2024 — 2025"
+                 data-evidence-type="Usability Testing"
+                 data-evidence-desc="Unmoderated video screen tests evaluating digital product interfaces and navigation architectures."
+                 data-evidence-img="./assets/images/research/playbookux-completed-tests.png">
+              <div class="evidence-img-box">
+                <img src="./assets/images/research/playbookux-completed-tests.png" alt="PlaybookUX completed usability tests" loading="lazy">
+                <span class="evidence-zoom-tag">Zoom ↗</span>
+              </div>
+              <div class="evidence-info">
+                <div class="evidence-meta">
+                  <span>PlaybookUX</span>
+                  <span>2024–25</span>
+                </div>
+                <h4 class="evidence-title">Completed Usability Sessions</h4>
+                <p class="evidence-desc">Verified screen-recorded think-aloud sessions identifying navigation roadblocks in early prototypes.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 4 Participant Principles -->
+        <div>
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 20px;">
+            My 4 Participant Principles for Clearer Software
+          </h3>
+          <div class="principles-grid">
+            <div class="principle-card">
+              <span class="principle-num">01</span>
+              <h4 class="principle-title">Observe Before Judging</h4>
+              <p class="principle-desc">Record exactly what happened and where friction arose before concluding whether a feature is good or bad.</p>
+            </div>
+            <div class="principle-card">
+              <span class="principle-num">02</span>
+              <h4 class="principle-title">Explain the "Why"</h4>
+              <p class="principle-desc">Always tie an action or hesitation to an unmet expectation, missing context, or misleading visual cue.</p>
+            </div>
+            <div class="principle-card">
+              <span class="principle-num">03</span>
+              <h4 class="principle-title">Separate Taste from Usability</h4>
+              <p class="principle-desc">Personal aesthetic preference is distinct from interaction blockers that impede other users.</p>
+            </div>
+            <div class="principle-card">
+              <span class="principle-num">04</span>
+              <h4 class="principle-title">Respect the Research Context</h4>
+              <p class="principle-desc">Follow testing guidelines, deadline commitments, confidentiality protocols, and researcher prompts.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. Experience & Education Timeline
+         ====================================================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-kicker">04 · CAREER &amp; ACADEMICS</div>
+        <h2 class="section-title">
+          Hands-on engineering.<br>
+          <em>Rigorous academic foundations.</em>
+        </h2>
+
+        <div class="timeline-section-grid" style="margin-top: 40px;">
+          <!-- Left: Work Experience -->
+          <div>
+            <h3 class="column-heading">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              Work Experience
+            </h3>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <span class="timeline-time">JULY 2023 — AUGUST 2023</span>
+                <h4 class="timeline-role">Web Developer Trainee</h4>
+                <div class="timeline-org">NPIT Solutions · Nashik, India</div>
+                <p class="timeline-details">
+                  Engaged in full-stack web development tasks, implementing responsive frontend user interfaces, integrating backend database operations with REST APIs, and performing functional testing and bug triage across staging components.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <span class="timeline-time">2024 — PRESENT</span>
+                <h4 class="timeline-role">Capstone Lead &amp; Full-Stack Architect</h4>
+                <div class="timeline-org">PlacementX Project · NMIMS MPSTME</div>
+                <p class="timeline-details">
+                  Spearheading architecture and full-stack implementation of the intelligent campus placement platform for NMIMS. Engineering asynchronous queue processing with Redis/BullMQ, PostgreSQL database schema with Prisma ORM, and React 18 TypeScript interfaces.
+                </p>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Right: Education Timeline -->
+          <div>
+            <h3 class="column-heading">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              Academic Background
+            </h3>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <span class="timeline-time">2024 — 2027</span>
+                <h4 class="timeline-role">B.Tech in Information Technology</h4>
+                <div class="timeline-org">SVKM's NMIMS MPSTME · Shirpur</div>
+                <p class="timeline-details">
+                  Current CGPA: <strong>7.95 / 10</strong>. Focusing on Software Engineering, Distributed Architectures, Database Management Systems, and Artificial Intelligence application workflows.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <span class="timeline-time">2021 — 2024</span>
+                <h4 class="timeline-role">Diploma in Computer Science &amp; Engineering</h4>
+                <div class="timeline-org">R. C. Patel Polytechnic, Shirpur (MSBTE)</div>
+                <p class="timeline-details">
+                  Graduated with <strong>86.80% Distinction</strong>. Built foundational mastery in Object-Oriented Programming (Java), Data Structures, PHP, MySQL, and Web Technologies.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <span class="timeline-time">2014 — 2021</span>
+                <h4 class="timeline-role">Secondary School Certificate (SSC)</h4>
+                <div class="timeline-org">R. C. Patel Secondary School, Shirpur</div>
+                <p class="timeline-details">
+                  Completed secondary education with <strong>91.40% Distinction</strong> under the Maharashtra State Board.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Certifications & Hackathon Honors (Direct from Official Resume) -->
+        <div class="resume-honors-wrap" style="margin-top: 48px; padding-top: 36px; border-top: 1px solid var(--line);">
+          <div class="subhead-row" style="margin-bottom: 20px;">
+            <div>
+              <h3 class="subhead-title">Certifications &amp; Hackathon Honors</h3>
+              <p style="font-size: 0.9375rem; color: var(--muted); margin-top: 4px;">
+                Verified credentials in cloud architecting, artificial intelligence management, and competitive engineering.
+              </p>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">
+              Official Resume Credentials
+            </span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
+            <!-- Hackathon Honor -->
+            <div style="background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                  <span style="background: var(--lime); color: var(--lime-text); font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-pill);">
+                    NATIONAL HACKATHON
+                  </span>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted);">
+                    GDSC &bull; Fetch.ai
+                  </span>
+                </div>
+                <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 8px;">
+                  2nd Runner-up, National-Level 24-Hour Hackathon
+                </h4>
+                <p style="font-size: 0.875rem; color: var(--muted); line-height: 1.6;">
+                  Awarded 2nd Runner-up in an intensive national 24-hour hackathon organized by Google Developer Student Clubs (GDSC) and Fetch.ai.
+                </p>
+              </div>
+              <div style="margin-top: 14px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--green); font-weight: 600;">
+                ★ National Recognition
+              </div>
+            </div>
+
+            <!-- AWS Academy -->
+            <div style="background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                  <span style="background: var(--violet-soft); color: #1a153b; font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-pill);">
+                    CLOUD ARCHITECTING
+                  </span>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted);">
+                    Amazon Web Services
+                  </span>
+                </div>
+                <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 8px;">
+                  AWS Academy Graduate &ndash; Cloud Architecting
+                </h4>
+                <p style="font-size: 0.875rem; color: var(--muted); line-height: 1.6;">
+                  Amazon Web Services training in cloud compute, storage, networking, security policies, and high-availability architecture.
+                </p>
+              </div>
+              <div style="margin-top: 14px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); font-weight: 600;">
+                AWS Training &amp; Certification
+              </div>
+            </div>
+
+            <!-- AI CERTs -->
+            <div style="background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                  <span style="background: var(--paper-subtle); color: var(--ink); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-pill);">
+                    AI PROJECT MANAGEMENT
+                  </span>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted);">
+                    Coursera
+                  </span>
+                </div>
+                <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 8px;">
+                  Managing Projects with AI &ndash; AI CERTs
+                </h4>
+                <p style="font-size: 0.875rem; color: var(--muted); line-height: 1.6;">
+                  Professional certification in artificial intelligence project lifecycles, generative AI workflow integration, and predictive model deployment.
+                </p>
+              </div>
+              <div style="margin-top: 14px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); font-weight: 600;">
+                AI CERTs Professional Credential
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. Technical Skills Section
+         ====================================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-kicker">05 · TECHNICAL CAPABILITIES</div>
+        <h2 class="section-title">
+          Tools and technologies<br>
+          <em>I work with daily.</em>
+        </h2>
+        <p class="section-subtitle">
+          Organized by domain based on real project codebases and practical implementations.
+        </p>
+
+        <div class="skills-grid" style="margin-top: 40px;">
+          <!-- 1. Languages -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-badge">Java &amp; Java 8</span>
+              <span class="skill-badge">TypeScript</span>
+              <span class="skill-badge">JavaScript (ES6+)</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">HTML5 &amp; CSS3</span>
+              <span class="skill-badge">PHP</span>
+            </div>
+          </div>
+
+          <!-- 2. Full-Stack & APIs -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Backend &amp; Frameworks</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-badge">Spring Boot</span>
+              <span class="skill-badge">React.js</span>
+              <span class="skill-badge">Next.js 14</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express.js</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">JWT Authentication</span>
+              <span class="skill-badge">FastAPI</span>
+              <span class="skill-badge">Tailwind CSS</span>
+              <span class="skill-badge">Android SDK</span>
+              <span class="skill-badge">Prisma ORM</span>
+            </div>
+          </div>
+
+          <!-- 3. Databases & DevOps -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Databases &amp; Cloud</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-badge">PostgreSQL</span>
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">SQL Server</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">Redis</span>
+              <span class="skill-badge">BullMQ</span>
+              <span class="skill-badge">Supabase</span>
+              <span class="skill-badge">Firebase</span>
+              <span class="skill-badge">AWS Cloud</span>
+            </div>
+          </div>
+
+          <!-- 4. Tools & Enterprise -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Tools &amp; Enterprise Systems</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-badge">Git &amp; GitHub</span>
+              <span class="skill-badge">Postman</span>
+              <span class="skill-badge">Android Studio</span>
+              <span class="skill-badge">Power BI</span>
+              <span class="skill-badge">Tableau</span>
+              <span class="skill-badge">Figma</span>
+              <span class="skill-badge">MySQL Workbench</span>
+              <span class="skill-badge">SAP ERP Fundamentals</span>
+              <span class="skill-badge">SAP S/4HANA</span>
+            </div>
+          </div>
+
+          <!-- 5. UX & Research -->
+          <div class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Product &amp; Research Lens</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-badge">Usability Testing</span>
+              <span class="skill-badge">1:1 Think-Aloud</span>
+              <span class="skill-badge">Diary Missions</span>
+              <span class="skill-badge">AI Tool Evaluation</span>
+              <span class="skill-badge">Friction Identification</span>
+              <span class="skill-badge">Accessibility (a11y)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. Contact Section
+         ====================================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-kicker">06 · CONNECT &amp; COLLABORATE</div>
+
+        <div class="contact-grid">
+          <div class="contact-info-block">
+            <h2 class="section-title">
+              Have a project, opportunity,<br>
+              <em>or research study in mind?</em>
+            </h2>
+            <p>
+              I am open to full-stack software development roles, collaborative internships, capstone partnerships, and research invitations (usability tests, 1:1 developer interviews, or diary missions).
+            </p>
+
+            <!-- One-Click Copy Email Pill -->
+            <div>
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); display: block; margin-bottom: 8px;">
+                DIRECT EMAIL ADDRESS:
+              </span>
+              <div id="copyEmailBtn" class="email-copy-box" role="button" tabindex="0" aria-label="Copy Yash Chaudhari's email to clipboard">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span class="email-address-text">yashchaudhari500@gmail.com</span>
+                <span id="copyEmailFeedback" class="btn-copy-tag">Copy ⎘</span>
+              </div>
+            </div>
+
+            <!-- Channels -->
+            <div class="contact-channels">
+              <a href="tel:+917558290999" class="channel-link">
+                <span>Direct Phone / WhatsApp</span>
+                <b>+91-7558290999 ↗</b>
+              </a>
+              <a href="https://www.linkedin.com/in/yashchaudhari500" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <span>LinkedIn Profile</span>
+                <b>in/yashchaudhari500 ↗</b>
+              </a>
+              <a href="https://github.com/YashChaudhari999" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <span>GitHub Repositories</span>
+                <b>@YashChaudhari999 ↗</b>
+              </a>
+              <a href="https://x.com/_YashChaudhari" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <span>X / Twitter</span>
+                <b>@_YashChaudhari ↗</b>
+              </a>
+              <a href="https://research.yashchaudhari.me" target="_blank" rel="noopener noreferrer" class="channel-link" style="border-color: var(--lime);">
+                <span>Dedicated Research Site</span>
+                <b style="color: var(--ink);">research.yashchaudhari.me ↗</b>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-form-card">
+            <h3>Send a Direct Note</h3>
+            <p>Fills your native mail client with a formatted note or reach out directly via email.</p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" class="form-input" placeholder="Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="jane@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Your Message or Inquiry</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Tell me about your project, team opportunity, or study invitation..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Message via Email →
+              </button>
+
+              <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>YASH CHAUDHARI</strong> · Full-Stack Developer &amp; User Research Participant
+      </div>
 
+      <nav class="footer-nav" aria-label="Footer links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="https://research.yashchaudhari.me" target="_blank" rel="noopener noreferrer">research.yashchaudhari.me ↗</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span>© <span id="currentYear">2026</span> Yash Chaudhari</span>
+        <button id="backToTopBtn" class="btn-back-to-top" aria-label="Scroll back to top">
+          Back to top ↑
+        </button>
+      </div>
+    </div>
+  </footer>
 
+  <!-- ========================================================================
+       Modals
+       ======================================================================== -->
 
+  <!-- 1. Project Detail Modal -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span id="projectModalCat" class="modal-badge-cat">Category</span>
+          <h3 id="projectModalTitle">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+      </div>
 
-  <!--
-    - custom js link
-  -->
+      <div class="modal-body">
+        <div class="project-modal-grid">
+          <!-- Left Column: Visual Showcase & Direct Actions -->
+          <div class="project-modal-media">
+            <div class="modal-img-container">
+              <img id="projectModalImg" src="" alt="Project Preview">
+            </div>
+            <div class="project-modal-actions">
+              <a id="projectModalGithub" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>View on GitHub</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+              <a id="projectModalDemo" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>Live Demo</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Engineering Depth -->
+          <div class="project-modal-info">
+            <section class="modal-info-block">
+              <h4 class="modal-block-title">Problem &amp; System Overview</h4>
+              <p id="projectModalSummary" class="modal-block-text"></p>
+            </section>
+
+            <section class="modal-info-block">
+              <h4 class="modal-block-title">Key Technical Contributions</h4>
+              <p id="projectModalContrib" class="modal-block-text"></p>
+            </section>
+
+            <section class="modal-info-block">
+              <h4 class="modal-block-title">Technologies &amp; Architecture</h4>
+              <div id="projectModalTech" class="tech-tags"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Research Evidence Modal -->
+  <div id="evidenceModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="evidenceModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div style="display: flex; gap: 8px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); align-items: center;">
+            <span id="evidenceModalPlatform" style="font-weight: 700; color: var(--ink);">Platform</span>
+            <span>·</span>
+            <span id="evidenceModalYear">Year</span>
+            <span>·</span>
+            <span id="evidenceModalType" style="color: var(--green); font-weight: 600;">Type</span>
+          </div>
+          <h3 id="evidenceModalTitle">Evidence Preview</h3>
+        </div>
+        <button class="modal-close-btn" data-modal-close aria-label="Close proof dialog">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="evidence-modal-img-wrap">
+          <img id="evidenceModalImg" src="" alt="Research Evidence Screenshot">
+        </div>
+
+        <p id="evidenceModalDesc" style="color: var(--ink-secondary); line-height: 1.68; font-size: 0.9375rem; margin-top: 18px;"></p>
+
+        <div class="evidence-compliance-note">
+          <strong>Privacy &amp; Compliance Notice:</strong> Screenshots are displayed in accordance with study participant terms. Proprietary prompts, private researcher dashboards, and client identifiers have been redacted to ensure participant confidentiality.
+        </div>
+
+        <div style="margin-top: 22px; display: flex; justify-content: flex-end;">
+          <a href="https://research.yashchaudhari.me" target="_blank" rel="noopener noreferrer" class="btn btn-lime">
+            <span>Visit Dedicated Research Portfolio</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla Scripts -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

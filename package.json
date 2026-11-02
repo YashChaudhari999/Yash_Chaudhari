@@ -1,0 +1,18 @@
+{
+  "name": "yash-chaudhari-portfolio",
+  "version": "2.0.0",
+  "description": "Personal Portfolio of Yash Chaudhari — Full-Stack Developer & User Research Participant",
+  "private": true,
+  "scripts": {
+    "start": "npx serve -l 4173 .",
+    "dev": "npx serve -l 4173 ."
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "user-research",
+    "full-stack"
+  ],
+  "author": "Yash Chaudhari",
+  "license": "MIT"
+}
