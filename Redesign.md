@@ -1,9 +1,9 @@
-Act as a senior product designer, UI/UX specialist, frontend architect, accessibility engineer, and SEO specialist. Completely audit and redesign https://yashchaudhari.me/ and integrate my user research participation hobby from https://research.yashchaudhari.me/ into the main personal portfolio. Follow the full specification in the accompanying prompt, inspect the live sites and repository before editing, preserve verified content and working functionality, build and test the actual website, and report all changes and deployment requirements.
+Act as a senior product designer, UI/UX specialist, frontend architect, accessibility engineer, and SEO specialist. Completely audit and redesign https://yashchaudhari.is-a.dev/ and integrate my user research participation hobby from https://research.yashchaudhari.is-a.dev/ into the main personal portfolio. Follow the full specification in the accompanying prompt, inspect the live sites and repository before editing, preserve verified content and working functionality, build and test the actual website, and report all changes and deployment requirements.
 
 
 
 
-# MASTER PROMPT: COMPLETE REDESIGN OF YASHCHAUDHARI.ME
+# MASTER PROMPT: COMPLETE REDESIGN OF YASHCHAUDHARI.IS-A.DEV
 
 ## 1. YOUR ROLE
 
@@ -11,9 +11,9 @@ Act as a senior product designer, creative frontend developer, UI/UX engineer, a
 
 Your task is to completely audit, redesign, implement, and test my personal portfolio website:
 
-**Primary website:** https://yashchaudhari.me/
+**Primary website:** https://yashchaudhari.is-a.dev/
 
-**Research portfolio:** https://research.yashchaudhari.me/
+**Research portfolio:** https://research.yashchaudhari.is-a.dev/
 
 This is a real website redesign and implementation task, not a request for a design concept, mockup, or written recommendations.
 
@@ -43,7 +43,7 @@ Before changing any code, inspect both live websites and the entire accessible p
 
 ### Audit the main website
 
-URL: https://yashchaudhari.me/
+URL: https://yashchaudhari.is-a.dev/
 
 Inspect:
 
@@ -62,7 +62,7 @@ Inspect:
 
 ### Audit the research website
 
-URL: https://research.yashchaudhari.me/
+URL: https://research.yashchaudhari.is-a.dev/
 
 Inspect:
 
@@ -275,7 +275,7 @@ Create a visually engaging research feature containing:
 - A compact summary of the types of studies I have experienced.
 - A small selection of genuine research evidence or approved screenshots.
 - A short explanation of how research participation influences my approach to development.
-- A prominent button linking to https://research.yashchaudhari.me/.
+- A prominent button linking to https://research.yashchaudhari.is-a.dev/.
 
 Suggested call to action:
 
